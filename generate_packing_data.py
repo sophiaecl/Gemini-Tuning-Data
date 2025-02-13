@@ -232,7 +232,7 @@ def generate_dataset(num_records, destinations_file='destinations.json'):
     destinations = load_destinations(destinations_file)
     records = []
     
-    for i in range(500):
+    for i in range(1000):
         user_id = f"U{str(i+1).zfill(4)}"
         gender = random.choice(['f', 'm', 'nb'])
         age = random.randint(18, 75)
